@@ -12,18 +12,34 @@ This is a framework for developing 3D sketching applications in Unity.
 - serialization of sketches
 - OBJ export of sketches
 
-## Installation 
-Add the Assets/Plugins/VRSketchingGeometry folder into the plugins folder of your Unity project.  
-If you downloaded a release import the Unity package using the editor into your project.  
+## Installation
 
-The materials and shaders provided are for the Built-In Render Pipeline as used by a normal 3D project template. If you want to use a Scriptable Render Pipeline you will have to upgrade the materials and replace the `Custom/TwoSidedSurfaceShader`.
+### Manually from a local folder
+- open the Package Manager
+- click on "+"
+- choose "Add package from disk..."
+- locate the downloaded package
+- select the package.json file within the package
+
+### Automatically from URL
+Installation from URL is not yet supported.
+You will likely encounter problems.
+
+## Import the examples
+- open the Package Manager
+- locate the installed package
+- click on "Samples"
+- click on "Import"
+- files will be imported under `Assets/Samples/`
 
 ## [API documentation](https://tterpi.github.io/VRSketchingGeometry/)
 Read the [developer guide](https://tterpi.github.io/VRSketchingGeometry/articles/intro.html) and [API documentation](https://tterpi.github.io/VRSketchingGeometry/api/index.html) at the github pages site.
 
 ## Quick start
 The following example script shows how to create new line sketch object and add few control points to it using a command invoker. At the end one command is undone.  
-You will have to reference the file DefaultReferences.asset found in `Assets/Plugins/VRSketchingGeometry` in the public field `defaults`.  
+You will have to reference the file DefaultReferences.asset found in `Example Structures/Scenes/ExampleScene` in the public field `defaults`.
+To access "Example Structures" you have to import it in the page of the package in the Package Manager (see [Import the examples](./README.md#import-the-examples) )
+
 See [the example script](https://github.com/tterpi/VRSketchingGeometry/blob/master/Assets/Plugins/VRSketchingGeometry/Example/VRSketchingExample.cs) for a more comprehensive demonstration.
 
     using UnityEngine;
@@ -54,7 +70,7 @@ See [the example script](https://github.com/tterpi/VRSketchingGeometry/blob/mast
     }
 
 ## Workflow
-1. Instantiate a sketch world prefab. Easy access to prefabs is provided through the DefaultReferences asset at `Assets/Plugins/VRSketchingGeometry/DefaultReferences.asset`. 
+1. Instantiate a sketch world prefab. Easy access to prefabs is provided through the DefaultReferences asset at `Example Structures/DefaultReferences.asset`. (see [Import the examples](./README.md#import-the-examples))
 2. Create sketch objects and groups from prefabs and add them to the sketch object world. Execute commands using a CommandInvoker object for undo and redo functionality. All scripts are in the VRSketchingGeometry namespace.
 4. Serialize or export using methods of the sketch world script.
 5. Load serialized sketch world from the serialized xml file for further editing.
@@ -63,6 +79,7 @@ An [example script](https://github.com/tterpi/VRSketchingGeometry/blob/master/As
 
 ## Sample scene
 The sample scene contains various messy test scripts and corresponding game object.
+(see [Import the examples](./README.md#import-the-examples))
 
 ## Tests
 Tests still have to be migrated from the original plugin version.
