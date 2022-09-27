@@ -81,7 +81,10 @@ An [example script](https://github.com/tterpi/VRSketchingGeometry/blob/master/As
 The sample scene contains various messy test scripts and corresponding game object.
 (see [Import the examples](./README.md#import-the-examples))
 
+![sampleScene](https://user-images.githubusercontent.com/51961152/192534926-2c6406b1-4556-4808-baf7-9f8eeab0bc5f.png)
+
 ## Tests
+
 Tests still have to be migrated from the original plugin version.
 
 ## Notes
