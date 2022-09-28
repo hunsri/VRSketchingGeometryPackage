@@ -27,7 +27,7 @@ This is a framework for developing 3D sketching applications in Unity.
 - choose "Add package from git URL..."
 - enter the URL 
 ``` 
-https://github.com/hunsri/VRSketchingGeometryPackage.git 
+https://github.com/hunsri/VRSketchingGeometryPackage.git
 ```
 
 ## Import the examples
