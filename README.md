@@ -22,8 +22,13 @@ This is a framework for developing 3D sketching applications in Unity.
 - select the package.json file within the package
 
 ### Automatically from URL
-Installation from URL is not yet supported.
-You will likely encounter problems.
+- open the Package Manager
+- click on "+"
+- choose "Add package from git URL..."
+- enter the URL 
+``` 
+https://github.com/hunsri/VRSketchingGeometryPackage.git 
+```
 
 ## Import the examples
 - open the Package Manager
@@ -42,6 +47,7 @@ To access "Example Structures" you have to import it in the page of the package 
 
 See [the example script](https://github.com/tterpi/VRSketchingGeometry/blob/master/Assets/Plugins/VRSketchingGeometry/Example/VRSketchingExample.cs) for a more comprehensive demonstration.
 
+```CS
     using UnityEngine;
     using VRSketchingGeometry.SketchObjectManagement;
     using VRSketchingGeometry;
@@ -68,6 +74,8 @@ See [the example script](https://github.com/tterpi/VRSketchingGeometry/blob/mast
             Invoker.Undo();
         }
     }
+
+```
 
 ## Workflow
 1. Instantiate a sketch world prefab. Easy access to prefabs is provided through the DefaultReferences asset at `Example Structures/DefaultReferences.asset`. (see [Import the examples](./README.md#import-the-examples))
